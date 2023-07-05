@@ -1,0 +1,33 @@
+def inputTask(numOfTask):
+    task={}
+    for i in range(numOfTask):
+        nama=input('Nama Task = ')
+        waktu=int(input('Waktu Task = '))
+        task[nama]=[waktu,0]
+    
+    return task
+
+Task=inputTask(3)
+
+print(Task)
+
+def createQueue():
+    q=[]
+    return(q)
+def enqueue(q,data):
+    q.insert(0,data)
+    return(data)
+def dequeue(q):
+    data=q.pop()
+    return(data)
+def isEmpty(q):
+    return (q==[])
+def size(q):
+    return (len(q))
+
+
+def scheduling(limitTime,Task):
+    taskQueue=createQueue
+    for nama in task.keys():
+        enqueue(taskQueue,nama)
+    print(taskQueue)
